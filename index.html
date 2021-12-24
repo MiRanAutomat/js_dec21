@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta http-equiv="Content-Style-Type" content="text/css">
+                <title>exercice javascript</title>
+                <link rel="stylesheet" href="styles.css">
+                </head>
+    <body>
+        <div>
+            <h1>Exercice Javascript</h1>
+            <p class="intitule"> Afin de passer à l'étape suivante, veuillez sélectionner votre réponse.
+            Chaque bonne réponse compte pour 10 points.
+            </p>
+            <!--balise DIV contenant les 2 questions -->
+            <div class=style-questions>
+                <!--QUESTION 1 -->
+                <div class="question-padding">
+                    <span class="span-bold"> QUESTION 1:</span> En quelle année a eu lieu la révolution française?
+                    <form action="" method="POST">
+                        <label>year:</label>
+                        
+                        <div class="bullet-spacebefore">
+                            <div class="radio-over"><!--style radio over -->
+                                <input type="radio" id="choice1" name="year" onclick="reset_msg(1789);">
+                                    <label for="datechoice1">1789</label>
+                                    </div>
+                            
+                            <div>
+                                <input type="radio" id="choice2" name="year" onclick="reset_msg(1888);">
+                                    <label for="datechoice2">1888</label>
+                                    </div>
+                            
+                            <div>
+                                <input type="radio" id="choice3" name="year" onclick="reset_msg(1889);">
+                                    <label for="datechoice3">1889</label>
+                                    </div>
+                            <div id="msg"></div>
+                            <!--<input type="submit" value="send>>" onclick="return send();" />    --!>
+                             
+                             </form>
+                             </div>
+                             </div>
+                             
+                             
+                             
+                             <!--QUESTION 2 -->
+                            <div class="question-padding">
+                                <span class="span-bold"> QUESTION 2:</span> Quelle sont la 1ère et 3e lettre de l'alphabet? Veuillez sélectionner 2 réponses, svp.
+                                <div class="bullet-spacebefore">
+                                    <input type="checkbox" id="A" name="letter" onclick="verifyAnswer2('A');" >
+                                        <label for="choixdate1">A</label>
+                                        </div>
+                                
+                                <div>
+                                    <!--class cb pour js -->
+                                    <input type="checkbox" id="B" name="letter" onclick="verifyAnswer2('B');">
+                                        <label for="choixdate2">B</label>
+                                        </div>
+                                
+                                <div>
+                                    <input type="checkbox" id="C" name="letter" onclick="verifyAnswer2('C');">
+                                        <label for="choixdate3">C</label>
+                                        </div>
+                            </div>
+                            <div id="msg2"></div>
+                            <!--END QUESTION 2 -->
+                        </div><!-- balise fermante contenant les 2 questions -->
+                        </div>
+                </body>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+</html>
